@@ -39,6 +39,7 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
+    <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
 </head>
@@ -88,7 +89,8 @@
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">darbiadev_ups package</a><ul>
-<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-darbiadev_ups.ups_services">darbiadev_ups.ups_services module</a></li>
 <li><a class="reference internal" href="#module-darbiadev_ups">Module contents</a></li>
 </ul>
 </li>
@@ -161,18 +163,51 @@
             
   <div class="section" id="darbiadev-ups-package">
 <h1>darbiadev_ups package<a class="headerlink" href="#darbiadev-ups-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="subpackages">
-<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="darbiadev_ups.lib.html">darbiadev_ups.lib package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="darbiadev_ups.lib.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="darbiadev_ups.lib.html#module-darbiadev_ups.lib.lib">darbiadev_ups.lib.lib module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="darbiadev_ups.lib.html#module-darbiadev_ups.lib">Module contents</a></li>
-</ul>
-</li>
-</ul>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
+<div class="section" id="module-darbiadev_ups.ups_services">
+<span id="darbiadev-ups-ups-services-module"></span><h2>darbiadev_ups.ups_services module<a class="headerlink" href="#module-darbiadev_ups.ups_services" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="darbiadev_ups.ups_services.AuthType">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">darbiadev_ups.ups_services.</span></span><span class="sig-name descname"><span class="pre">AuthType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/darbiadev/darbiadev-ups/blob/main/darbiadev_ups/ups_services.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#darbiadev_ups.ups_services.AuthType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="darbiadev_ups.ups_services.AuthType.HEADERS">
+<span class="sig-name descname"><span class="pre">HEADERS</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="reference external" href="https://github.com/darbiadev/darbiadev-ups/blob/main/darbiadev_ups/ups_services.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#darbiadev_ups.ups_services.AuthType.HEADERS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="darbiadev_ups.ups_services.AuthType.JSON">
+<span class="sig-name descname"><span class="pre">JSON</span></span><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="reference external" href="https://github.com/darbiadev/darbiadev-ups/blob/main/darbiadev_ups/ups_services.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#darbiadev_ups.ups_services.AuthType.JSON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="darbiadev_ups.ups_services.UPSServices">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">darbiadev_ups.ups_services.</span></span><span class="sig-name descname"><span class="pre">UPSServices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">base_url</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_license_number</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/darbiadev/darbiadev-ups/blob/main/darbiadev_ups/ups_services.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#darbiadev_ups.ups_services.UPSServices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class wrapping UPS’ API.</p>
+<p>This class wraps UPS’ API.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="darbiadev_ups.ups_services.UPSServices.check_address">
+<span class="sig-name descname"><span class="pre">check_address</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">street_lines</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">city</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">postal_code</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">country</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/darbiadev/darbiadev-ups/blob/main/darbiadev_ups/ups_services.py#L96-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#darbiadev_ups.ups_services.UPSServices.check_address" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="darbiadev_ups.ups_services.UPSServices.time_in_transit">
+<span class="sig-name descname"><span class="pre">time_in_transit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_state</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">from_postal_code</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">from_country</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_state</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_postal_code</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_country</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pickup_date</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="reference external" href="https://github.com/darbiadev/darbiadev-ups/blob/main/darbiadev_ups/ups_services.py#L120-L173"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#darbiadev_ups.ups_services.UPSServices.time_in_transit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="darbiadev_ups.ups_services.UPSServices.track">
+<span class="sig-name descname"><span class="pre">track</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tracking_number</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="reference external" href="https://github.com/darbiadev/darbiadev-ups/blob/main/darbiadev_ups/ups_services.py#L76-L94"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#darbiadev_ups.ups_services.UPSServices.track" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
 <div class="section" id="module-darbiadev_ups">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-darbiadev_ups" title="Permalink to this headline">¶</a></h2>
